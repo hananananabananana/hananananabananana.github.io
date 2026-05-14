@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="es">
 <head>
 <meta charset="UTF-8">
 <title>Vivienda Eficiente</title>
@@ -56,6 +55,7 @@
     }
 
    section {
+		text-align:justify;
         background: white;
         margin: 30px auto;
         padding: 25px;
@@ -67,10 +67,41 @@
     h2 {
         color: #1f4e5f;
     }
+
+    padding:20px;
+}
+
+table{
+    border-collapse:collapse;
+    width:500px;
+    background:white;
+    border:2px solid #3f6f5c;
+}
+
+th{
+    background:#3f6f5c;
+    color:white;
+    font-size:12px;
+    padding:6px;
+    border:1px solid #3f6f5c;
+}
+
+td{
+    text-align:center;
+    font-size:12px;
+    padding:5px;
+    border:1px solid #222;
+    background:#efefef;
+}
+
+tr:nth-child(even) td{
+    background:#e3e3e3;
+}
+
 </style>
 
 </head>
-
+<center>
 <body>
 
 <!-- NAV -->
@@ -95,7 +126,9 @@
 <!-- CONTENIDO -->
 <section id="intro">
     <h2>Introducción</h2>
-    <p>Este proyecto busca diseñar una vivienda eficiente utilizando materiales térmicos que reduzcan el calor interior y mejoren el confort dentro del hogar. Además, pretende disminuir el uso de energía eléctrica en sistemas de ventilación o aire acondicionado, contribuyendo al ahorro económico y al cuidado del medio ambiente.</p>
+    <p>El presente proyecto tiene como finalidad analizar los cambios de temperatura en viviendas tipo Infonavit y comprobar si el uso de materiales térmicos puede mejorar las condiciones de temperatura dentro del hogar. Para ello, se construyeron dos maquetas: una casa convencional y otra con aislante térmico elaborado con pintura térmica. Posteriormente, se registraron las temperaturas de ambas viviendas durante diferentes horas del día para comparar sus resultados. <br> <br>
+Este proyecto surgió debido a las altas temperaturas que se presentan en muchas viviendas de interés social, especialmente en zonas donde el calor es intenso durante gran parte del año. Además, se investigó el costo y funcionamiento de la pintura térmica para conocer si realmente puede ser una opción eficiente para las casas.
+</p>
 </section>
 
 <!-- CONTENIDO -->
@@ -114,7 +147,11 @@ Material aislante
 <!-- CONTENIDO -->
 <section id="material aislante">
     <h2>Material aislante</h2>
-    <p>La pintura térmica es un recubrimiento especial que reduce la transferencia de calor en techos y paredes. Contiene materiales aislantes que reflejan la radiación solar y disminuyen la absorción de calor.</p>
+    <p>La pintura térmica es un recubrimiento tecnológico formulado con resinas acrílicas que incorporan microesferas huecas de cerámica, vidrio o borosilicato. Estas partículas encapsulan aire o vacío en su interior, lo que crea una rotura de puente térmico a nivel milimétrico que interrumpe la conducción natural de frío y calor a través de los muros y techos del inmueble.
+    
+<br><br>En exteriores, su principal propiedad es la alta reflectancia solar, la cual repele hasta el 90% de los rayos ultravioleta e infrarrojos para evitar que la estructura absorba la energía del sol. En interiores, destaca por su baja emisividad, actuando como un espejo térmico que rebota el calor de la calefacción hacia la habitación en lugar de permitir que se disipe a través de las paredes frías.Una de sus ventajas más críticas es la capacidad anticondensación, ya que iguala la temperatura de la superficie de la pared con la del ambiente interior. <br><br> Al eliminar el choque térmico entre el aire cálido y los muros fríos, previene de raíz la aparición de humedad, manchas de moho y proliferación de hongos en las habitaciones.Además de su impacto en el ahorro energético medible, que reduce el uso de aire acondicionado y calefacción, posee propiedades ignífugas que evitan la propagación del fuego. Es un material de fácil aplicación, idéntico a una pintura convencional, compatible con superficies residenciales o industriales, y que optimiza el confort térmico sin restar un solo centímetro de espacio útil.</p>
+
+
 </section>
 
 <!-- CONTENIDO -->
@@ -128,13 +165,69 @@ Material aislante
 <!-- CONTENIDO -->
 <section id="resultados del experimento">
     <h2>Resultados del experimento</h2>
-    <p>* La casa sin aislante alcanzó hasta 36.9 °C
- <br>   
-* La casa con aislante alcanzó 34.7 °C
-<br>
-* La casa con aislante se calentó más lento
-<br>
-* Se mantuvo una temperatura más estable durante el día</p>
+    <p>Los resultados obtenidos muestran que la casa con aislante térmico presentó temperaturas menores en comparación con la vivienda convencional durante la mayor parte del experimento.<br><br>
+Las diferencias fueron más notorias en las horas donde hubo mayor exposición solar, especialmente entre las 9:00 y las 12:00 horas. Esto demuestra que la pintura térmica ayudó a disminuir la absorción de calor.<br><br>
+También se observó que la temperatura en la casa con aislante aumentó de manera más lenta y estable, mientras que la vivienda convencional presentó cambios más bruscos de temperatura
+</p>
+<center>
+<table>
+
+<tr>
+    <th>HORAS</th>
+    <th>CASA SIN MATERIAL<br>AISLANTE<br>(TEMP ºC)</th>
+    <th>CASA CON MATERIAL<br>AISLANTE<br>(TEMP ºC)</th>
+</tr>
+
+<tr>
+    <td>7:00</td>
+    <td>23.4º</td>
+    <td>23.2º</td>
+</tr>
+
+<tr>
+    <td>8:00</td>
+    <td>25º</td>
+    <td>24º</td>
+</tr>
+
+<tr>
+    <td>9:00</td>
+    <td>30º</td>
+    <td>27.8º</td>
+</tr>
+
+<tr>
+    <td>10:00</td>
+    <td>29.3º</td>
+    <td>26.8º</td>
+</tr>
+
+<tr>
+    <td>11:00</td>
+    <td>32.3º</td>
+    <td>31º</td>
+</tr>
+
+<tr>
+    <td>12:00</td>
+    <td>36.9º</td>
+    <td>34.7º</td>
+</tr>
+
+<tr>
+    <td>13:00</td>
+    <td>32.8º</td>
+    <td>31.8º</td>
+</tr>
+
+<tr>
+    <td>14:00</td>
+    <td>33º</td>
+    <td>32.2º</td>
+</tr>
+
+</table>
+</center>
 </section>
 
 
@@ -151,3 +244,4 @@ Material aislante
     <p> Sí, es completamente rentable a mediano y largo plazo. Aunque la inversión inicial puede ser ligeramente superior a la de los materiales de construcción tradicionales (como se observa en el presupuesto de la pintura térmica de aproximadamente $14,500 MXN), este gasto se recupera mediante el ahorro energético continuo. Al mantener la casa más fresca de manera natural, se reduce de forma drástica la necesidad de encender aires acondicionados o ventiladores, lo que disminuye significativamente el costo de los recibos de electricidad mes con mes.
 </p>
 </section>
+</body>
